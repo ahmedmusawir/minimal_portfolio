@@ -1,0 +1,131 @@
+/*=========================================
+=            UI ELEMENT STYLES            =
+=========================================*/
+
+hr {
+	background-color: @border;
+	background-image: -webkit-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image: -o-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image: -moz-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image: -ms-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image: linear-gradient(left, white 0%, @border 50%, white 100%);
+
+	border: none;
+	height: 1px;
+	margin: 1.5em auto;
+	width: 50%;
+
+	&.no-margin {
+		margin: 0 auto;
+	}
+}
+
+.box {
+	background-color: white;
+	border: 1px solid @border;
+	padding: 4px;
+	// margin-right: .5em;
+
+	.drop-shadow();
+
+	figure img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.btn {
+	background-color: @light-bg;
+	color: @regular-text;
+	display: inline-block;
+	font-size: 14px;
+	height: 32px;
+	padding: 5px 16px;
+	text-decoration: none;
+
+	.round();
+	.transition(background-color, .4s);
+
+	&:hover {
+		background-color: @dark-bg;
+		color: white;
+		text-decoration: none;
+	}
+
+	&:active {
+		background-color: white;
+		font-weight: bold;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	&.active {
+		background-color: white;
+		font-weight: bold;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+	
+}
+
+.btn-primary {
+	background-color: @primary;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 48px;
+
+	.inner-shadow(0, -3px, 0, 0, .2);
+
+	padding: 12px 24px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: lighten(@primary, 5%);
+		color: yellow;
+		text-decoration: none;
+	}
+
+	&:active {
+		box-shadow: none;
+		height: 45px;
+		margin-top: 3px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
