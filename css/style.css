@@ -1105,7 +1105,7 @@ hr {
   background-color: transparent;
   border: 0;
 }
-.hidden {
+.hidden-not {
   display: none !important;
   visibility: hidden !important;
 }
@@ -1492,6 +1492,15 @@ select {
   margin: 0 auto 1.5em;
   width: 50%;
 }
+.hidden {
+  opacity: .2;
+  filter: alpha(opacity=20);
+  -webkit-transition: opacity 0.8s ease-out;
+  -o-transition: opacity 0.8s ease-out;
+  -moz-transition: opacity 0.8s ease-out;
+  -ms-transition: opacity 0.8s ease-out;
+  transition: opacity 0.8s ease-out;
+}
 /*==================================
 =            @Font-Face            =
 ==================================*/
@@ -1877,6 +1886,10 @@ blockquote cite {
 }
 .available {
   color: #a6c63a;
+}
+.hidden {
+  opacity: .2;
+  filter: alpha(opacity=20);
 }
 /*==================================
 =            QUOTE AREA            =
