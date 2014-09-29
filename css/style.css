@@ -1594,6 +1594,13 @@ hr {
 hr.no-margin {
   margin: 0 auto;
 }
+hr.alt {
+  background: white;
+  border-top: 1px solid #dcdbdb;
+  border-bottom: 1px solid #dcdbdb;
+  height: 5px;
+  width: 120px;
+}
 .box {
   background-color: white;
   border: 1px solid #dcdbdb;
@@ -1675,6 +1682,56 @@ hr.no-margin {
   box-shadow: none;
   height: 45px;
   margin-top: 3px;
+}
+.quote-form {
+  margin: 0 auto;
+  width: 550px;
+}
+.quote-form p {
+  background-color: #f7f7f7;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 3px 3px 3px 16px;
+  text-align: left;
+}
+.quote-form p:hover {
+  background-color: #f2f2f2;
+}
+.quote-form label {
+  display: inline-block;
+  margin-top: 16px;
+}
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"],
+.quote-form input[type="number"],
+.quote-form textarea {
+  border: none;
+  font: 300 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  float: right;
+  height: 54px;
+  margin-left: 16px;
+  padding: 0 16px;
+  width: 350px;
+}
+.quote-form .select-container {
+  height: 60px;
+}
+.quote-form .select-container select {
+  float: right;
+  font-size: 16px;
+  margin: 16px 0 16px 16px;
+  width: 350px;
+}
+.quote-form textarea {
+  height: 200px;
+  padding: 16px;
+}
+.quote-form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  font: 300 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 /*===============================
 =            GENERAL            =
@@ -1785,6 +1842,41 @@ ul.row {
 }
 .portfolio-nav {
   padding: 1.5em 0;
+}
+.portfolio-image-list li {
+  margin-bottom: 1.5em;
+}
+.portfolio-image-list li figcaption {
+  font-size: 14px;
+  margin: 1.5em;
+  text-align: center;
+}
+.portfolio-image-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar {
+  padding: 2em .5em;
+}
+.sidebar a {
+  text-decoration: none;
+}
+.sidebar-nav {
+  padding-left: .75em;
+}
+blockquote p {
+  color: #7a7a7a;
+  font-style: italic;
+}
+blockquote p:before,
+blockquote p:after {
+  content: '"';
+}
+blockquote cite {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.available {
+  color: #a6c63a;
 }
 /*==================================
 =            QUOTE AREA            =

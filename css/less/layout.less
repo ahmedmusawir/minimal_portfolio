@@ -125,6 +125,57 @@ ul.row {
 	padding: 1.5em 0;
 }
 
+.portfolio-image-list {
+	li {
+		margin-bottom: 1.5em;
+
+		figcaption {
+			font-size: 14px;
+			margin: 1.5em;
+			text-align: center;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.sidebar {
+
+	padding: 2em .5em;
+
+	a {
+		text-decoration: none;
+	}
+} 
+
+.sidebar-nav {
+	padding-left: .75em;
+}
+
+blockquote {
+	p {
+		color: @light-text;
+		font-style: italic;
+
+		&:before,
+		&:after {
+			content: '"';
+		}
+	}
+
+	cite {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.available {
+	color: @intro-color-2;
+}
+
+
 /*==================================
 =            QUOTE AREA            =
 ==================================*/
